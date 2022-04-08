@@ -1,0 +1,287 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family:'Gill Sans';
+    background-image: url("assets/Fondo.png");
+}
+
+/*@font-face {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    font-style: normal; 
+   
+    src: url('assets/GillSans.ttc') format('WOFF');
+  }*/
+
+.main-flexer {
+    display:flex;
+    flex-direction: row;
+
+}
+
+.main-column {
+    width:33.33%;
+    height:100vh;
+   
+    align-items: center;
+    text-align: center;
+    overflow:hidden;
+    justify-content: center;
+}
+
+.main-column .logo {
+    margin-top:20px;
+    width:100%
+}
+
+.main-column .connect {
+    margin-top:10px;
+    width:55%;
+}
+
+form {
+    margin-top:40px;
+    display:flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+   
+}
+
+form img {
+   
+    width:50%;
+    margin-right:3px;
+}
+form select {
+    font-size: 25px;
+    padding:0px;
+    background-color:white;
+    text-decoration: none;
+    -webkit-appearance: none;
+    box-shadow : none; 
+    outline: 0;
+    border:0;
+    border-radius: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 3px;
+    
+    padding-right:20px;
+    font-family:'Gill Sans';
+    
+    
+}
+
+
+input {
+    margin-top:50px;
+    width:50%;
+}
+
+
+
+
+.column {
+    width:33.33%;
+    height:100vh;
+    
+    /* border:2px solid black;*/
+    align-items: center;
+    text-align: center;
+}
+
+/* First column woddy picture and text, starts here */
+
+.woody-flex{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.woody-image {
+    width:75%;
+    overflow: hidden;
+   
+}
+
+.woody-textimage {
+    width:50%;
+}
+
+/*Third column buzz picture and text, starts here */
+
+
+
+.buzz-flex{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buzz-image {
+    width:85%;
+    height:350px;
+    overflow: hidden;
+   
+}
+
+.buzz-textimage {
+    margin-bottom:10px;
+    width:50%;
+}
+
+/* Mobile view attempt */
+/* Woddy column */
+@media (max-width:500px){
+    .woody-flex{
+        width:100%;
+        height: 100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .woody-image {
+        width:150%;
+        overflow: hidden;
+       
+    }
+    
+    .woody-textimage {
+        position:relative;
+        top:-210px;
+        width:100%;
+        margin-bottom: 0;
+    }
+    /*----------------------*/
+    /*Main (middle) column */
+
+    .main-column {
+        width:33.33%;
+        height:100vh;
+       /* border:2px solid black;*/
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow:visible;
+    }
+
+    
+    .main-column .logo {
+        margin-top:20px;
+        position:relative;
+        top:-200px;
+        
+        width:200%;
+       
+    }
+    
+    .main-column .connect {
+        position:relative;
+        top:-50px;
+       align-items: center;
+        width:100%;
+    }
+    
+    form {
+        
+        display:flex;
+        flex-direction: row;
+        
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+    form img {
+       position:relative;
+       top:-40px;
+        width:100%;
+        margin-right:3px;
+    }
+    form select {
+        position:relative;
+        top:-40px;
+        font-size: 25px;
+        padding:0px;
+        background-color:white;
+        text-decoration: none;
+        -webkit-appearance: none;
+        box-shadow : none; 
+        outline: 0;
+        border:0;
+        border-radius: 0;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 3px;
+        
+        padding-right:20px;
+        font-family:'Gill Sans';
+        
+        
+    }
+    
+    
+    input {
+        position:relative;
+        top:-60px;
+
+        width:100%;
+    }
+    
+    
+    
+    
+    .column {
+        width:33.33%;
+        height:100vh;
+       /* border:2px solid black;*/
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+
+
+    /*Buzz*/
+
+    .buzz-flex{
+        width:100%;
+        height: 100vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .buzz-image {
+        width:180%;
+        height:200px;
+        overflow: hidden;
+       
+    }
+    
+    .buzz-textimage {
+        position:relative;
+        top:-230px;
+        width:100%;
+        margin-bottom:0px;
+    }
+
+}
+
